@@ -152,7 +152,7 @@ header .buttons {
     padding: 80px;
 }
 
-.flex-container {
+#future .flex-container {
     display: flex;
     justify-content: space-between;
 }
@@ -238,3 +238,42 @@ header .buttons {
     font-size: 14px;
     color: var(--colorGrayish);
 }
+
+/* TODO SIMPLE SECTION */
+
+#simple {
+    margin-top: 150px;
+    padding: 80px;
+}
+
+#simple .flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+#simple .content-left {
+    width: 50%;
+}
+
+#simple .content-left h4 {
+    color: var(--colorVeryDarkBlue);
+    font-size: 1.5rem;
+    margin: 30px 0;
+}
+
+#simple .content-left p {
+    color: var(--colorGrayish);
+}
+
+#simple .content-right {
+    transform: scale(150%);
+    width: 50%;
+    margin-left: -200px;
+}
+
+#simple .content-right img {
+    max-width: 100%;
+}
+
