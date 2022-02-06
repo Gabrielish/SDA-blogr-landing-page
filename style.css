@@ -73,8 +73,44 @@ nav ul li {
     font-family: 'Ubuntu 500';
     color: var(--colorWhite);
     display: inline-block;
-    margin: 10px
+    margin: 10px;
+    cursor: pointer;
 }
+
+nav ul li:hover {
+    text-decoration: underline;
+}
+
+header .logo {
+    padding-left: 80px;
+}
+
+/* Dropdown */
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.dropdown-content li {
+    color: var(--colorVeryDarkBlue);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 .logo {
     float: left;
@@ -277,3 +313,30 @@ header .buttons {
     max-width: 100%;
 }
 
+/* FOOTER SECTION */
+
+footer {
+    margin-top: 100px;
+    border-top-right-radius: 100px;
+    background-color: var(--colorVeryDarkBlue);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px;
+}
+
+footer h5 {
+    color: var(--colorWhite);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    list-style: none;
+    color: var(--colorWhite);
+    line-height: 25px;
+    cursor: pointer;
+}
+
+footer ul li:hover {
+    text-decoration: underline
+}
