@@ -188,3 +188,53 @@ header .buttons {
     max-width: 100%;
 
 }
+
+/* TODO INFRASTRUCTURE SECTION */
+
+#infrastructure {
+    margin-top: 100px;
+    background: url(images/bg-pattern-circles.svg) 100% no-repeat, var(--gradientBody);
+    background-position: bottom left;
+    display: flex;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    height: 40vh;
+}
+
+.flex-container-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container-1 {
+    
+    width: 50%;
+    max-width: 50%;
+    text-align: center;
+
+}
+
+.container-2 {
+    width: 50%;
+}
+
+#infrastructure img {
+    max-width: 100%;
+    transform: scale(130%);
+    /* transform: translateY(-100px); */
+    width: 80%;
+    margin-top: -50px;
+}
+
+#infrastructure h3 {
+    font-size: 1.8rem;
+    color: var(--colorWhite);
+    margin-bottom: 30px;
+}
+
+#infrastructure p {
+    font-size: 14px;
+    color: var(--colorGrayish);
+}
