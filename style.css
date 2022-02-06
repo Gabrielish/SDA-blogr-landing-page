@@ -21,6 +21,10 @@
     font-size: 16px;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* Fonts */
 
 @font-face {
@@ -48,7 +52,7 @@
     src: url(fonts/Ubuntu-Bold.ttf);
 }
 
-/* TODO HEADER COMPONENT */
+/* TODO HEADER SECTION */
 
 header {
     padding: 20px;
@@ -142,3 +146,45 @@ header .buttons {
     cursor: pointer;
 }
 
+/* TODO FUTURE SECTION */
+
+#future {
+    padding: 80px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#future h2 {
+    font-size: 2.5rem;
+    color: var(--colorVeryDarkBlue);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#future .content-left {
+    width: 50%;
+}
+
+#future .content-left h4 {
+    color: var(--colorVeryDarkBlue);
+    font-size: 1.5rem;
+    margin: 30px 0;
+}
+
+#future .content-left p {
+    color: var(--colorGrayish);
+}
+
+#future .content-right {
+    transform: scale(150%);
+    width: 50%;
+    margin-right: -200px;
+}
+
+#future .content-right img {
+    max-width: 100%;
+
+}
