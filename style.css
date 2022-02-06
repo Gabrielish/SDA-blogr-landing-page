@@ -13,6 +13,14 @@
     --gradientBody: linear-gradient(90deg, hsl(237, 17%, 21%) 0%, hsl(237, 23%, 32%) 100%);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu 400';
+    font-size: 16px;
+}
+
 /* Fonts */
 
 @font-face {
@@ -36,6 +44,101 @@
 }
 
 @font-face {
-    font-family: 'Ubuntu 600';
+    font-family: 'Ubuntu 700';
     src: url(fonts/Ubuntu-Bold.ttf);
 }
+
+/* TODO HEADER COMPONENT */
+
+header {
+    padding: 20px;
+    background: url(images/bg-pattern-intro-mobile.svg), var(--gradientIntro);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 100px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding-left: 50px;
+    float: left;
+}
+
+nav ul li {
+    font-family: 'Ubuntu 500';
+    color: var(--colorWhite);
+    display: inline-block;
+    margin: 10px
+}
+
+.logo {
+    float: left;
+}
+
+.right-menu {
+    float: right;
+}
+
+.right-menu a {
+    font-family: 'Ubuntu 500';
+    color: var(--colorWhite);
+    margin: 25px;
+    text-decoration: none;
+}
+
+.right-menu button {
+    font-family: 'Ubuntu 700';
+    color: var(--colorWhite);
+    background-color: var(--colorVeryLightRed);
+    border: none;
+    border-radius: 18px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.clear {
+    clear: both;
+}
+
+header h1 {
+    color: var(--colorWhite);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 80px;
+}
+
+header p {
+    text-align: center;
+    color: var(--colorWhite);
+    margin-top: 20px;
+}
+
+header .buttons {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 100px;
+}
+
+.btn-left {
+    margin: auto;
+    font-family: 'Ubuntu 700';
+    color: var(--colorWhite);
+    background-color: var(--colorVeryLightRed);
+    border: none;
+    border-radius: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-right {
+    text-align: center;
+    font-family: 'Ubuntu 700';
+    color: var(--colorLightRed);
+    background-color: var(--colorWhite);
+    border: none;
+    border-radius: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
